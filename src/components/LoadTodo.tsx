@@ -23,9 +23,9 @@ const LoadTodo = () => {
 
   return (
     <div className="load__todo">
-      {newData?.map((todo, key) => (
+      {newData?.map((todo) => (
         <Todo
-          key={key}
+          key={todo.id}
           id={todo.id}
           completed={todo.completed}
           dateComplete={todo.dateComplete}
